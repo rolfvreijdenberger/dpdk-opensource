@@ -1,0 +1,1 @@
+package nl.dpdk.collections.utils {	import nl.dpdk.collections.core.IMapper;		/**	 * copies a list, 1 on 1	 * @author rolf	 */	public class CopyMapper implements IMapper {		public function map(item : *) : * {			return item;		}	}}

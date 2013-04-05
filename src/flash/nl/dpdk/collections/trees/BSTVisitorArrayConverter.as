@@ -1,0 +1,1 @@
+package nl.dpdk.collections.trees {	/**	 * helper class that stores the BST in an array	 */	internal class BSTVisitorArrayConverter implements ITreeNodeVisitor {		private var array : Array = new Array();		public function visit(node : ITreeNode) : void {			array.push(node.getData());		}				public function getArray() : Array {			return array;			}	}}
