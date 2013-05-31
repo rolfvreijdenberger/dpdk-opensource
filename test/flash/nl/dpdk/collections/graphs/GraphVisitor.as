@@ -1,0 +1,4 @@
+package nl.dpdk.collections.graphs {	import nl.dpdk.collections.graphs.utils.IGraphVisitor;	import nl.dpdk.collections.lists.LinkedList;	import nl.dpdk.collections.lists.List;			/**	 * @author rolf	 */	public class GraphVisitor implements IGraphVisitor {		public var nodes : List = new LinkedList();		public var edges : List = new LinkedList();		public function visitNodeEarly(node : GraphNode) : void {			trace("GraphVisitor.visitNodeEarly(node): " + node);			nodes.add(node);		}
+		public function visitEdge(edge : GraphEdge) : void {			trace("GraphVisitor.visitEdge(edge): " + edge);			edges.add(edge);		}
+		public function visitNodeLate(node : GraphNode) : void {			trace("GraphVisitor.visitNodeLate(node): " + node);		}
+	}}

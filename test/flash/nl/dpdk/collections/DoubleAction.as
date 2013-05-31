@@ -1,0 +1,1 @@
+package nl.dpdk.collections {	import nl.dpdk.collections.core.IApplyer;	internal class DoubleAction implements IApplyer {		public function execute(item : *) : void {			item.name = item.name + item.name;			}		}}

@@ -1,0 +1,1 @@
+package nl.dpdk.collections {	import nl.dpdk.collections.core.IMapper;	internal class ConcatMapper implements IMapper {		private var concat : String;		public function ConcatMapper(concat : String) {			this.concat = concat;		}		public function map(item : *) : * {			return concat + item;			}	}}

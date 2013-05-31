@@ -1,0 +1,1 @@
+package nl.dpdk.collections {	import nl.dpdk.collections.core.IFolder;		internal class SquareFolder implements IFolder {	private var sum: int = 0;	public function SquareFolder(){			}		public function fold(item:*):void{		sum += (item * item);		}		public function get():*{		return sum;	}	}}

@@ -1,0 +1,1 @@
+package nl.dpdk.collections {	import asunit.framework.TestCase;	public class CollectionTest extends TestCase {		protected var alphabet : String = "abcdefghijklmnopqrstuvwxyz";		protected var alphabetLength:int = 26;				/**		 * base class for all collection tests		 */		public function CollectionTest(testMethod:String = null) {			super(testMethod);		}				}}
